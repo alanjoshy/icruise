@@ -1,0 +1,12 @@
+{% extends 'ucommon.html' %}
+{% block content %}
+<h1>MY PROFILE</h1>
+<table>
+         Welcome {{ customer.basic_data.first_name}} {{user.last_name}}
+         <br/>
+         <tr> <td>Username: </td><td>{{ customer.basic_data.username}}</td></tr>
+         <tr> <td>Address:</td><td>{{ customer.Address}}</td></tr>
+         <tr> <td>Email: </td><td>{{ customer.basic_data.email}}</td></tr>
+          <tr> <td>Phone Number:</td><td>{{ customer.Phone_Number}}</td></tr>
+</table>
+{% endblock %}

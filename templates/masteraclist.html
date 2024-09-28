@@ -1,0 +1,37 @@
+{% extends 'mcommon.html' %}
+{% block content %}
+<center><h1>View Cruise details</h1></center>
+<table style="width:140%; margin-left:-122px;" bgcolor="lightgray">
+    <tr>
+        <td>Cruise Name</td>
+        <td>Cabins</td>
+        <td>Cabin Type</td>
+        <td>Capacity</td>
+        <td>Year of Build</td>
+        <td>Price</td>
+        <td>Description</td>
+        <td>Starts From</td>
+        <td>Destination</td>
+        <td>Image</td>
+        <td>Update</td>
+        <td>Remove Details</td>
+    </tr>
+    {% for i in list %}
+    <tr>
+        <td>{{ i.Cruise_name }}</td>
+        <td>{{ i.Cabins }}</td>
+        <td>{{ i.Cabin_types }}</td>
+        <td>{{ i.Capacity }}</td>
+        <td>{{ i.Year_of_built }}</td>
+        <td>{{ i.Price_per_individuals }}</td>
+        <td>{{ i.Description }}</td>
+        <td>{{ i.Starts_from }}</td>
+        <td>{{ i.Destination }}</td>
+        <td><img src="{{ i.Image.url }}" height="150" width="150"></td>
+        <td><a href="{% url 'masteracup' i.id %}" >Update</a></td>
+        <td><a href="{% url 'masteracde' i.id %}" >Delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

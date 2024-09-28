@@ -1,0 +1,12 @@
+{% extends 'ucommon.html' %}
+{% block content %}
+<center><table>
+         <tr><td colspan="2"><center><img src="{{ object.Hall_image.url }}" width="300" height="350"></center></td> </tr>
+         <tr><td>Hall Name:</td> <td>{{ object.Hall_name }}</td></tr>
+         <tr> <td>Hall type</td><td>{{ object.Hall_type }}</td></tr>
+         <tr> <td>Number of seats</td><td>{{ object.Number_of_seats }}</td></tr>
+         <tr> <td>Amount</td> <td>{{ object.Amount }}</td></tr>
+         <tr> <td>Hall_Description</td><td>{{ object.Hall_Description }}</td></tr>
+</table>
+</center>
+{% endblock %}

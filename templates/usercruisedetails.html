@@ -1,0 +1,15 @@
+{% extends 'ucommon.html' %}
+{% block content %}
+<table align="center">
+         <tr><td colspan="2"><center><img src="{{ object.Image.url }}" width="300" height="350"></center></td> </tr>
+         <tr><td>Cruise Name:</td> <td>{{ object.Cruise_name }}</td></tr>
+         <tr> <td>Number Of Cabins</td><td>{{ object.Cabins }}</td></tr>
+         <tr> <td>Cabin Type</td><td>{{ object.Cabin_types }}</td></tr>
+         <tr> <td>Capacity</td> <td>{{ object.Capacity }}</td></tr>
+         <tr> <td>Year of Built</td><td>{{ object.Year_of_built }}</td></tr>
+         <tr> <td>Rate</td><td>{{ object.Price_per_individuals }}</td></tr>
+         <tr> <td>Starts from</td><td>{{ object.Starts_from }}</td></tr>
+         <tr> <td>Destination</td><td>{{ object.Destination }}</td></tr>
+         <tr> <td>Description</td><td>{{ object.Description }}</td></tr>
+ </table>
+{% endblock %}

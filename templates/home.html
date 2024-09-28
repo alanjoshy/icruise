@@ -1,0 +1,215 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+{% load static %}
+<html>
+<head>
+<title>I-Cruise</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cruise Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- fonts -->
+<link href="//fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<!-- /fonts -->
+<!-- css -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/gallery.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/jQuery.lightninBox.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/aos.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- /css -->
+<!-- js -->
+<script src="{% static 'js/modernizr.min.js' %}"></script>
+<!-- /js -->
+</head>
+<body>
+<!-- topbar -->
+<div class="topbar-w3ls">
+	<div class="container">
+		<a href="" class="logo">
+			<h1>
+				<i class="fa fa-ship" aria-hidden="true"></i>
+				I-Cruise
+				<i class="fa fa-ship" aria-hidden="true"></i>
+			</h1>
+		</a>
+		<div class="top-agileits">
+			<div class="top-w3l1">
+				<span class="glyphicon glyphicon-phone-alt"></span>
+				<p class="agile1">+009715066767532</p>
+				<p class="agile2">+009715066767432</p>
+			</div>
+			<div class="top-w3l2">
+				<span class="glyphicon glyphicon-map-marker"></span>
+				<p class="agileits1">77 Jack Street</p>
+				<p class="agileits2">Ontario, Canada</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- /topbar -->
+<!-- navigation -->
+<div class="navbar-wrapper">
+    <div class="container">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav cl-effect-7">
+						<li class=""><a href="{% url 'home' %}" class="page-scroll">Home</a></li>
+						<li><a href="#about" class="page-scroll">About</a></li>
+						<li><a href="#gallery" class="page-scroll">Gallery</a></li>
+						<li><a href="{% url 'reg' %}" class="page-scroll">Registration</a></li>
+                        <li><a href="{% url 'login' %}" class="page-scroll">Login</a></li>
+						<li><a href="#contact" class="page-scroll">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+        </nav>
+	</div>
+</div>
+<!-- /navigation -->
+<!-- banner -->
+<section class="banner-w3ls">
+		<div id="block" data-vide-bg="{% static 'video/cruise' %}" data-vide-options="position: 0% 50%">
+			<div class="overlay">
+				<h2>Enjoy Cruising</h2>
+
+		  </div>
+		</div>
+</section>
+<!-- /banner -->
+<!-- about -->
+<section class="about-wthree" id="about">
+	<div class="container">
+		<div class="col-lg-6 col-md-6 col-sm-12" data-aos="flip-right">
+			<h3 class="text-center">About Us</h3>
+			<p class="text-center">The web application  entitled “<strong>I-CRUISE</strong>” deals with luxurious ship management. This site provides the complete information of  cruises, the trip packages, reservation, multi cuisine restaurants, meeting  etc. India has many major and minor ports. Some of  the main ones are Mumbai, Visakhapatnam, Cochin, Mangalore and Kolkata. India’s  long and varied coastline gives it ample scope for developing its coastal  tourism. There are a lot of tourists who come here for taking part in adventure  water sports and to go cruising. Besides cruising and boating, you can go  canoeing, sea swimming, fishing and diving. Resorts and travel agencies offer  multiple packages and travel options. </p>
+		</div><div class="col-lg-6 col-md-6 col-sm-12" data-aos="flip-left">
+			<ul class="grid cs-style-1">
+				<li>
+					<figure>
+						<img src="{% static 'images/about-img2.jpg' %}" alt="img01" class="img-responsive">
+						<figcaption>
+							<a href="{% static 'images/about-img.jpg' %}" class="lightninBox" data-lb-group="1">View More</a>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- /about -->
+<!-- divider -->
+<!-- /divider -->
+<!-- services -->
+<!-- /services -->
+<!-- gallery -->
+<section class="gallery-info" id="gallery">
+	<div class="container">
+		<h3 class="text-center" data-aos="zoom-in">Our Gallery</h3>
+		<ul class="clearfix demo">
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img1.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img2.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img3.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img4.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img5.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img6.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img7.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/gallery-img8.jpg' %}" alt="" class="img-responsive"/></li>
+		</ul>
+    </div>
+</section>
+<!-- /gallery -->
+<!-- team -->
+<section class="team-w3" id="team"></section>
+<!-- /team -->
+<!-- map -->
+<section class="map-w3" data-aos="zoom-in">
+	<iframe class="googlemaps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380510.6741687111!2d-88.01234121699822!3d41.83390417061058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1455598377120" style="border:0" allowfullscreen></iframe>
+</section>
+<!-- /map -->
+<!-- contact -->
+<section class="contact-w3-agileits" id="contact">
+	<div class="container">
+		<h3 class="text-center" data-aos="zoom-in">Get In Touch</h3>
+		<div class="col-lg-4 col-md-4 contact-w3l1" data-aos="flip-right">
+		  <div class="subscribe">
+			  <form action="#" method="post">
+				  <div class="clearfix"></div>
+				</form>
+			</div>
+		</div>
+		<div class="col-lg-8 col-md-8 contact-w3l2" data-aos="flip-left">
+<pre>
+Address:
+77 Jack Street
+Chicago, USA
+Contact:
++1 515 151515
++1 010 101010
+</pre>
+
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- /contact -->
+<!-- footer -->
+<section class="footer-w3-agileits">
+	<div class="container">
+	  <p class="text-center">&copy; 2021 ICruise. All Rights Reserved </p>
+	</div>
+</section>
+<!-- /footer -->
+<!-- back to top -->
+<a href="#0" class="cd-top">Top</a>
+<!-- /back to top -->
+<!-- js files -->
+<!-- js files -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/grayscale.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/index.js' %}"></script>
+<!-- js for back to top -->
+<script src="{% static 'js/top.js' %}"></script>
+<!-- /js for back to top -->
+<!-- js for about lightbox -->
+<script src="{% static 'js/jQuery.lightninBox.js' %}"></script>
+<script type="text/javascript">
+	$(".lightninBox").lightninBox();
+</script>
+<!-- /js for about lightbox -->
+<!-- js for gallery -->
+<script src="{% static 'js/jquery.picEyes.js' %}"></script>
+<script>
+$(function(){
+	//picturesEyes($('li'));
+	$('ul.demo li').picEyes();
+});
+</script>
+<!-- /js for gallery -->
+<!-- js for banner -->
+<script src="{% static 'js/jquery.vide.js' %}"></script>
+<!-- /js for banner -->
+<!-- /js files -->
+</body>
+</html>

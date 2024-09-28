@@ -1,0 +1,16 @@
+{% extends 'ucommon.html' %}
+{% block content %}
+<center><h2>Hall Details</h2></center>
+
+     {% for i in list %}
+        <div style="width:256px;height:330px;background-color:lightgray;float: left;margin-left:45px;margin-right:30px;margin-bottom:30px;margin-top:30px;">
+     <img src="{{ i.Hall_image.url }}" width="255" height="250"><br/>
+      <table>
+         <tr><td>Hall Name:</td> <td>{{ i.Hall_name }}</td></tr>
+     </table>
+            <br/>
+             <div style="width:256px;"><center><button><a href="{% url 'uvhalldet' i.id %}">View More</a> </button><button><a href="{% url 'bookhall' i.id %}">Book Now</a> </button></center></div>
+
+        </div>
+     {% endfor %}
+{% endblock %}

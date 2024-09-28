@@ -1,0 +1,28 @@
+{% extends 'mcommon.html' %}
+{% block content %}
+<center><h1>View Hall Details</h1></center>
+<table style="width:140%; margin-left:-122px;">
+    <tr>
+        <td>Hall Name</td>
+        <td>Hall Type</td>
+        <td>Number Of Seats</td>
+        <td>Amount</td>
+        <td>Description</td>
+        <td>Hall image</td>
+        <td>Update</td>
+        <td>Remove</td>
+    </tr>
+    {% for i in list %}
+    <tr>
+        <td>{{ i.Hall_name }}</td>
+        <td>{{ i.Hall_type }}</td>
+        <td>{{ i.Number_of_seats }}</td>
+        <td>{{ i.Amount }}</td>
+        <td>{{ i.Hall_Description }}</td>
+        <td><img src="{{ i.Hall_image.url }}" height="150" width="250"></td>
+        <td><a href="{% url 'masterhallup' i.id %}" >Update</a></td>
+        <td><a href="{% url 'masterhde' i.id %}" >Delete</a></td>
+    </tr>
+ {% endfor %}
+    </table>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends 'mcommon.html' %}
+{% block content %}
+<center><h1>View Food Details</h1></center>
+<table bgcolor="lightgray" style="width:140%; margin-left:-122px;" >
+    <tr>
+        <td>Food Name</td>
+        <td>Food Type</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Description</td>
+        <td>Food_image</td>
+        <td>Update</td>
+        <td>Remove</td>
+    </tr>
+    {% for i in list %}
+    <tr>
+        <td>{{ i.Food_name }}</td>
+        <td>{{ i.Food_type }}</td>
+        <td>{{ i.Price }}</td>
+        <td>{{ i.Quantity }}</td>
+        <td>{{ i.Description }}</td>
+        <td><img src="{{ i.Food_image.url }}" height="150" width="250"></td>
+        <td><a href="{% url 'masterfoodup' i.id %}" >Update</a></td>
+        <td><a href="{% url 'masterfde' i.id %}" >Delete</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
